@@ -1,13 +1,40 @@
+# Hangman
+
+## A simple app based on the eponymous word game, traditionally played with pencil and paper
+
+### Set up
+
+- Clone this repo with `git clone https://github.com/davidtrussler/hangman.git`
+- Change location to this repo with `cd hangman`
+- Install all necessary packages with `npm install`
+- Runs the app in development mode with `npm start`
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+### Steps to build the app
+
+#### Done
+
+- Set up basic react app [X]
+- Strip out the unnecessary files, update README and add any required basic assets (e.g. favicon) [X]
+
+#### TODO
+
+- Create basic components (markup) for initial state []
+- Set up SASS []
+- Add styles for initial state []
+- Set up Jest []
+- Add logic
+
+
+
+<!-- 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
@@ -66,3 +93,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ -->
