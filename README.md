@@ -16,11 +16,11 @@
 
 - Set up basic react app [X]
 - Strip out the unnecessary files, update README and add any required basic assets (e.g. favicon) [X]
-- Create basic components (markup) for initial state [x]
+- Create basic components (markup) for initial state [X]
+- Set up SASS [X]
 
 #### TODO
 
-- Set up SASS []
 - Add styles for initial state []
 - Set up Jest []
 - Add main display logic: 
