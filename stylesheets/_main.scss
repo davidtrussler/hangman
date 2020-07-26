@@ -32,6 +32,11 @@ main {
 		}
 	}
 
+	.btn--start {
+		display: block; 
+		margin: 0 auto; 
+	}
+
 	@include respond-to(600px) {
 		.intro, 
 		.game {
@@ -40,11 +45,6 @@ main {
 
 		.img-container {
 			margin-top: 0; 
-		}
-
-		.btn--start {
-			display: block; 
-			margin: 0 auto; 
 		}
 	}
 }

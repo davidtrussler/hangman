@@ -4,4 +4,11 @@ header {
 
 .header__inner {
 	@include column(12); 
+
+	margin-bottom: 1rem; 
+
+	@include respond-to(600px) {
+		border-bottom: solid 1px; 
+		padding-bottom: 1rem; 
+	}
 }
