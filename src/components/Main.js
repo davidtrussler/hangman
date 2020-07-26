@@ -1,4 +1,5 @@
 import React from 'react';
+import { Main_game } from './Main_game'; 
 
 export function Main() {
 	return (
@@ -15,11 +16,7 @@ export function Main() {
 						<p>To begin click &#8220;Start the game&#8221;. Good luck!</p>
 					</section>
 
-					<section className="game">
-						<div className="img-container img-container--figure"></div>
-
-						<button className="btn btn--start">Start the game</button>
-					</section>
+					<Main_game/>
 				</div>
 			</div>
 		</main>
