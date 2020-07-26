@@ -20,23 +20,26 @@
 - Set up SASS [X]
 - Add styles for initial state [X]
 - Set up Jest [X]
-
-#### TODO
-
 - Add game logic: 
-    - Set initial states: []
-        - playing: `inactive` 
-        - hits: empty array
-        - misses: empty array
-        - word: empty string
-    - Change  states based on user input:
-        - playing: 
-            - `active` on `Start game` []
-            - `complete` on either 
-                - hits = letters.length []
-                - game level: levels.length []
-        - hits: update array on each guess []
-        - misses: update array on each guess []
+	- Set initial states: [X]
+		- playing: `inactive` 
+		- hits: empty array
+		- misses: empty array
+		- word: empty string
+	- Change  states based on user input:
+		- playing: 
+			- `active` on `Start game` [X]
+
+#### To do
+
+- Change  states based on user input:
+	- playing: 
+		- `complete` on either 
+		- hits = letters.length []
+		- game level: levels.length []
+	- hits: update array on each guess []
+	- misses: update array on each guess []
+	- word: update to random value on `Start game` []
 - Update display based on game states []
 - Make sprite for main image []
 - Replace images with SVG []

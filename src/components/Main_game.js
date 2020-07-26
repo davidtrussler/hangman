@@ -12,12 +12,23 @@ export class Main_game extends Component {
 		}
 	}
 
+	handleClick = (e) => {
+		this.setState({
+			playing: 'active'
+		})
+	}
+
 	render() {
 		return (
 			<section className="game">
 				<div className="img-container img-container--figure"></div>
 
-				<button className="btn btn--start">Start the game</button>
+				<button
+					className="btn btn--start"
+					onClick={ this.handleClick }
+				>
+					Start the game
+				</button>
 			</section>
 		)
 	}
