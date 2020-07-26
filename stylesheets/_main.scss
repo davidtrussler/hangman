@@ -18,7 +18,7 @@ main {
 
 	.img-container {
 		width: 100%;
-		max-width: calc(300px - #{$default-gutter}); 
+		max-width: calc(250px - #{$default-gutter}); 
 		height: 0;
 		padding: 195 / 142 * 100% 0 0; 
 		margin: 0 auto;
@@ -26,8 +26,8 @@ main {
 		background-repeat: no-repeat;
 		background-size: cover; 
 
-		@include respond-to(300px) {
-			height: 195 / 142 * 300px;
+		@include respond-to(250px) {
+			height: 195 / 142 * 250px;
 			padding-top: 0;
 		}
 	}
