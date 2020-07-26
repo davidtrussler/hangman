@@ -13,9 +13,9 @@ export function Main() {
 
 					<p>To begin click &#8220;Start the game&#8221;. Good luck!</p>
 
-					<div className="img-container"></div>
+					<div className="img-container img-container--figure"></div>
 
-					<button>Start the game</button>
+					<button className="btn btn--start">Start the game</button>
 				</div>
 			</div>
 		</main>

@@ -2,7 +2,7 @@ body {
 	font-family: Verdana, "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", sans-serif;
 }
 
-p, li {
+p, li, .btn {
 	font-size: 0.875rem; 
 	line-height: 1.5; 
 	margin: 0 0 0.4375em; 
@@ -70,3 +70,7 @@ h1 {
 // .inlineTitle {
 // 	font-style: italic; 
 // }
+
+.btn {
+	padding: 0.5rem 1rem;
+}
