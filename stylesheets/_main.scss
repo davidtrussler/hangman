@@ -7,6 +7,12 @@ main {
 .main__inner {
 	@include column(12); 
 
+	@include respond-to(600px) {
+		width: 100%; 
+		margin-left: 0; 
+		margin-right: 0; 
+	}
+
 	p {
 		text-indent: 1rem; 
 
@@ -30,6 +36,10 @@ main {
 			height: 195 / 142 * 250px;
 			padding-top: 0;
 		}
+
+		@include respond-to(600px) {
+			margin-top: 0; 
+		}
 	}
 
 	.btn--start {
@@ -37,14 +47,10 @@ main {
 		margin: 0 auto; 
 	}
 
-	@include respond-to(600px) {
-		.intro, 
-		.game {
+	.intro, 
+	.game {
+		@include respond-to(600px) {
 			@include column(6); 
-		}
-
-		.img-container {
-			margin-top: 0; 
 		}
 	}
 }
