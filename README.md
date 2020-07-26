@@ -19,20 +19,29 @@
 - Create basic components (markup) for initial state [X]
 - Set up SASS [X]
 - Add styles for initial state [X]
+- Set up Jest [X]
 
 #### TODO
 
-- Set up Jest []
-- Add main display logic: 
-  - Initial state for main playing area = `inactive` []
-  - Clicking `Start game` sets state to `active` []
-  - Game completed sets state to `completed` []
 - Add game logic: 
-  - Initial state for game level = 0 []
-  - user input changes game level state []
+    - Set initial states: []
+        - playing: `inactive` 
+        - hits: empty array
+        - misses: empty array
+        - word: empty string
+    - Change  states based on user input:
+        - playing: 
+            - `active` on `Start game` []
+            - `complete` on either 
+                - hits = letters.length []
+                - game level: levels.length []
+        - hits: update array on each guess []
+        - misses: update array on each guess []
+- Update display based on game states []
 - Make sprite for main image []
 - Replace images with SVG []
 - Add breakpoints as variables []
+
 
 
 <!-- 
