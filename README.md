@@ -16,12 +16,12 @@
 
 - Set up basic react app [X]
 - Strip out the unnecessary files, update README and add any required basic assets (e.g. favicon) [X]
-- Create basic components (markup) for initial state [x]
+- Create basic components (markup) for initial state [X]
+- Set up SASS [X]
+- Add styles for initial state [X]
 
 #### TODO
 
-- Set up SASS []
-- Add styles for initial state []
 - Set up Jest []
 - Add main display logic: 
   - Initial state for main playing area = `inactive` []
@@ -32,6 +32,7 @@
   - user input changes game level state []
 - Make sprite for main image []
 - Replace images with SVG []
+- Add breakpoints as variables []
 
 
 <!-- 

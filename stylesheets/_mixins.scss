@@ -1,0 +1,22 @@
+@mixin respond-to($min-width, $max-width: false) {
+  @media screen and (min-width: $min-width) {
+    @if $max-width {
+      @media (max-width: $max-width) {
+        @content
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}

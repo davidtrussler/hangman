@@ -1,0 +1,18 @@
+footer {}
+
+.footer__inner {
+	@include column(12); 
+
+	margin-top: 1rem; 
+
+	@include respond-to(600px) {
+		border-top: solid 1px; 
+		padding-top: 1rem; 
+	}
+}
+
+.footer__credit {
+	float: right; 
+	font-size: 0.75rem; 
+	line-height: 1rem; 
+}

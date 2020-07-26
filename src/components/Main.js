@@ -5,17 +5,21 @@ export function Main() {
 		<main>
 			<div className="constrained">
 				<div className="main__inner">
-					<p>This is a web app version of the paper and pencil guessing game. The app thinks of a word, your task is to guess it by suggesting letters, one at a time.</p>
+					<section className="intro">
+						<p>This is a web app version of the paper and pencil guessing game. The app thinks of a word, your task is to guess it by suggesting letters, one at a time.</p>
 
-					<p>If you guess a correct letter it will show below in its correct position. If your suggested letter does not occur in the word, the app draws one element of a hanged man stick figure.</p>
+						<p>If you guess a correct letter it will show below in its correct position. If your suggested letter does not occur in the word, the app draws one element of a hanged man stick figure.</p>
 
-					<p>Guessing the mystery word before the hanged man is complete means you are the winner. If the figure is completed without the word being guessed you have lost.</p>
+						<p>Guessing the mystery word before the hanged man is complete means you are the winner. If the figure is completed without the word being guessed you have lost.</p>
 
-					<p>To begin click &#8220;Start the game&#8221;. Good luck!</p>
+						<p>To begin click &#8220;Start the game&#8221;. Good luck!</p>
+					</section>
 
-					<div className="img-container"></div>
+					<section className="game">
+						<div className="img-container img-container--figure"></div>
 
-					<button>Start the game</button>
+						<button className="btn btn--start">Start the game</button>
+					</section>
 				</div>
 			</div>
 		</main>

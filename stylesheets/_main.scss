@@ -1,0 +1,56 @@
+main {
+	@include clearfix; 
+
+	margin: 0 0 0.5rem; 
+}
+
+.main__inner {
+	@include column(12); 
+
+	@include respond-to(600px) {
+		width: 100%; 
+		margin-left: 0; 
+		margin-right: 0; 
+	}
+
+	p {
+		text-indent: 1rem; 
+
+		&:first-child {
+			text-indent: 0; 
+			font-weight: bold; 
+		}
+	}
+
+	.img-container {
+		width: 100%;
+		max-width: calc(250px - #{$default-gutter}); 
+		height: 0;
+		padding: 195 / 142 * 100% 0 0; 
+		margin: 1rem auto;
+		background: url('/figure.png'); 
+		background-repeat: no-repeat;
+		background-size: cover; 
+
+		@include respond-to(250px) {
+			height: 195 / 142 * 250px;
+			padding-top: 0;
+		}
+
+		@include respond-to(600px) {
+			margin-top: 0; 
+		}
+	}
+
+	.btn--start {
+		display: block; 
+		margin: 0 auto; 
+	}
+
+	.intro, 
+	.game {
+		@include respond-to(600px) {
+			@include column(6); 
+		}
+	}
+}
