@@ -10,16 +10,6 @@
   }
 }
 
-// @mixin divider_horizontal {
-// 	content: ''; 
-// 	clear: both; 
-// 	display: block; 
-// 	height: 2px;
-// 	border-radius: 1px;
-// 	background: $colour-primary_background;
-// 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-// }
-
 @mixin clearfix {
   &:after {
     content: ".";
