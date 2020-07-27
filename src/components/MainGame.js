@@ -10,9 +10,9 @@ export class MainGame extends Component {
 		}
 	}
 
-	startGame = (e) => {
+	startGame = () => {
 		this.setState({
-			playing: 'active', 
+			playing: 'active'
 		})
 	}
 

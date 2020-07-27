@@ -23,32 +23,34 @@
 - Add game logic: 
 	- Set initial states: [X]
 		- playing: `inactive` 
-		- hits: empty array
-		- misses: empty array
-		- word: empty string
-	- Change  states based on user input:
+	- Change states based on user input:
 		- playing: 
 			- `active` on `Start game` [X]
-		- word: 
-			- update to random value on `Start game` [X]
 - Update display based on game states: 
 	- inactive [X]
 
 #### To do
 
-- Change  states based on user input:
-	- playing: 
-		- `complete` on either 
-		- hits = letters.length []
-		- game level: levels.length []
-	- hits: update array on each guess []
-	- misses: update array on each guess []
-	- Update display based on game states: 
-	  - active []
-    - complete []
-	- Make sprite for main image []
-	- Replace images with SVG []
-	- Add breakpoints as variables []
+- Add game logic: 
+	- Set initial states: []
+		- hits: empty array
+		- misses: empty array
+		- word: empty string
+	- Change states based on user input:
+		- playing: 
+			- `complete` on either 
+				- hits = letters.length []
+				- game level: levels.length []
+		- word: 
+			- update to random value on `Start game` []
+		- hits: update array on each guess []
+		- misses: update array on each guess []
+		- Update display based on game states: 
+		  - active []
+	    - complete []
+		- Make sprite for main image []
+		- Replace images with SVG []
+		- Add breakpoints as variables []
 - Make sprite for main image []
 - Replace images with SVG []
 - Add breakpoints as variables []
