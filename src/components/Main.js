@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main_game } from './Main_game'; 
+import { MainGame } from './MainGame'; 
 
 export function Main() {
 	return (
@@ -16,7 +16,7 @@ export function Main() {
 						<p>To begin click &#8220;Start the game&#8221;. Good luck!</p>
 					</section>
 
-					<Main_game/>
+					<MainGame/>
 				</div>
 			</div>
 		</main>

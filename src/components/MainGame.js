@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-export class Main_game extends Component {
+export class MainGame extends Component {
 	constructor() {
 		super(); 
 
 		this.state = {
-	    playing: 'inactive', 
-	    hits: [], 
-	    misses: [], 
-	    word: ''
+			playing: 'inactive', 
+			hits: [], 
+			misses: [], 
+			word: ''
 		}
 	}
 

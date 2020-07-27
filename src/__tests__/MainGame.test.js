@@ -1,15 +1,15 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16'; 
 import Enzyme, {shallow, mount} from 'enzyme'; 
-import { Main_game } from '../components/Main_game'; 
+import { MainGame } from '../components/MainGame'; 
 
 Enzyme.configure({adapter: new Adapter()}); 
 
-describe('Main_game component', () => {
+describe('MainGame component', () => {
 	let wrapper; 
 
 	beforeEach(() => {
-		wrapper = shallow(<Main_game/>); 
+		wrapper = shallow(<MainGame/>); 
 	}); 
 
 	test('Checks the states are set correctly on load', () => {
