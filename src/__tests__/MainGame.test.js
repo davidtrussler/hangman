@@ -2,6 +2,7 @@ import React from 'react';
 import Adapter from 'enzyme-adapter-react-16'; 
 import Enzyme, {shallow, mount} from 'enzyme'; 
 import { MainGame } from '../components/MainGame'; 
+import { Library } from '../components/Library'; 
 
 Enzyme.configure({adapter: new Adapter()}); 
 
@@ -37,6 +38,6 @@ describe('MainGame component', () => {
 		expect(playingState).toBe('active'); 
 		expect(hitsState.length).toBe(0);
 		expect(missesState.length).toBe(0);
-		expect(wordState).toBe('');
+		expect(Library.indexOf(wordState)).toBeGreaterThanOrEqual(0);
 	}); 
 }); 

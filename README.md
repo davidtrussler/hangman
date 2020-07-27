@@ -29,6 +29,8 @@
 	- Change  states based on user input:
 		- playing: 
 			- `active` on `Start game` [X]
+		- word: 
+			- update to random value on `Start game` [X]
 
 #### To do
 
@@ -39,7 +41,6 @@
 		- game level: levels.length []
 	- hits: update array on each guess []
 	- misses: update array on each guess []
-	- word: update to random value on `Start game` []
 - Update display based on game states []
 - Make sprite for main image []
 - Replace images with SVG []

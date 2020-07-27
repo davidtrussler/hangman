@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Library } from './Library'; 
 
 export class MainGame extends Component {
 	constructor() {
@@ -14,7 +15,8 @@ export class MainGame extends Component {
 
 	handleClick = (e) => {
 		this.setState({
-			playing: 'active'
+			playing: 'active', 
+			word: Library[Math.floor(Math.random() * Library.length)]
 		})
 	}
 
