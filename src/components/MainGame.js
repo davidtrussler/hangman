@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Library } from './Library'; 
+import { GameInactive } from './GameInactive'; 
 
 export class MainGame extends Component {
 	constructor() {
@@ -7,44 +7,42 @@ export class MainGame extends Component {
 
 		this.state = {
 			playing: 'inactive', 
-			hits: [], 
-			misses: [], 
-			word: ''
 		}
 	}
 
-	handleClick = (e) => {
+	startGame = (e) => {
 		this.setState({
 			playing: 'active', 
-			word: Library[Math.floor(Math.random() * Library.length)]
 		})
 	}
 
-	renderControls = () => {
+	renderGame = () => {
 		switch (this.state.playing) {
 			case 'active': 
-				return 'game is active!'; 
+				return (
+					<p>The game is active!</p>
+				)
 				break; 
 			case 'complete': 
-				return 'game is over!'; 
+				return (
+					<p>The game is over!</p>
+				)
 				break; 
 			default: 
 				return (
-					<button
-						className="btn btn--start"
-						onClick={ this.handleClick }
-					>
-						Start the game
-					</button>
+					<GameInactive
+						startCallback = {this.startGame}
+					/>
 				)
-		}
+				break; 
+			}
 	}
 
 	render() {
 		return (
 			<section className="game">
 				<div className="img-container img-container--figure"></div>
-				{this.renderControls()}
+				{this.renderGame()}
 			</section>
 		)
 	}
