@@ -31,6 +31,8 @@
 			- `active` on `Start game` [X]
 		- word: 
 			- update to random value on `Start game` [X]
+- Update display based on game states: 
+	- inactive [X]
 
 #### To do
 
@@ -41,7 +43,12 @@
 		- game level: levels.length []
 	- hits: update array on each guess []
 	- misses: update array on each guess []
-- Update display based on game states []
+	- Update display based on game states: 
+	  - active []
+    - complete []
+	- Make sprite for main image []
+	- Replace images with SVG []
+	- Add breakpoints as variables []
 - Make sprite for main image []
 - Replace images with SVG []
 - Add breakpoints as variables []

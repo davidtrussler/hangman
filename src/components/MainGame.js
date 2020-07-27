@@ -20,17 +20,31 @@ export class MainGame extends Component {
 		})
 	}
 
+	renderControls = () => {
+		switch (this.state.playing) {
+			case 'active': 
+				return 'game is active!'; 
+				break; 
+			case 'complete': 
+				return 'game is over!'; 
+				break; 
+			default: 
+				return (
+					<button
+						className="btn btn--start"
+						onClick={ this.handleClick }
+					>
+						Start the game
+					</button>
+				)
+		}
+	}
+
 	render() {
 		return (
 			<section className="game">
 				<div className="img-container img-container--figure"></div>
-
-				<button
-					className="btn btn--start"
-					onClick={ this.handleClick }
-				>
-					Start the game
-				</button>
+				{this.renderControls()}
 			</section>
 		)
 	}
