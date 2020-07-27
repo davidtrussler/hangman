@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { GameInactive } from './GameInactive'; 
+import { GameActive } from './GameActive'; 
 
 export class MainGame extends Component {
 	constructor() {
@@ -20,7 +21,7 @@ export class MainGame extends Component {
 		switch (this.state.playing) {
 			case 'active': 
 				return (
-					<p>The game is active!</p>
+					<GameActive/>
 				)
 				break; 
 			case 'complete': 
