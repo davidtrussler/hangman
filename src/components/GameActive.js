@@ -15,15 +15,23 @@ export class GameActive extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<h2>Word</h2>
-				<p>letters</p>
-				<h2>Guess</h2>
-				<form>
-					<input type="text"/>
-					<button>Enter</button>
-				</form>
-				<h2>Misses</h2>
-				<p></p>
+				<div className="game__field">
+					<h2>Word</h2>
+					<p>letters</p>
+				</div>
+
+				<div className="game__field">
+					<h2>Guess</h2>
+					<form>
+						<input type="text"/>
+						<button>Enter</button>
+					</form>
+				</div>
+
+				<div className="game__field">
+					<h2>Misses</h2>
+					<p></p>
+				</div>
 			</React.Fragment>
 		)
 	}
