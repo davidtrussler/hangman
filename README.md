@@ -2,6 +2,12 @@
 
 ## A simple app based on the eponymous word game, traditionally played with pencil and paper
 
+### Prerequisites
+
+Ensure you have the latest versions of the following installed: 
+- [node](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
 ### Set up
 
 - Clone this repo with `git clone https://github.com/davidtrussler/hangman.git`
@@ -10,7 +16,7 @@
 - Runs the app in development mode with `npm start`
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-### Steps to build the app
+### Steps taken to build the app
 
 - [X] Set up basic react app
 
