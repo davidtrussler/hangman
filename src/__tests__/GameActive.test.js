@@ -22,4 +22,24 @@ describe('GameActive component', () => {
 		expect(missesState.length).toBe(0); 
 		expect(Library.indexOf(wordState)).toBeGreaterThanOrEqual(0);
 	}); 
+
+	test('Checks the hidden word is correctly rendered on load', () => {
+		wrapper.setState({word: 'test'});
+
+		expect(wrapper.find('.t-word').html()).toBe(
+			'<p class="t-word"><span>_</span><span>_</span><span>_</span><span>_</span></p>'
+		);
+	}); 
+
+	test('Checks the hidden word is correctly rendered on user correct guess', () => {
+		wrapper.setState({
+			word: 'test', 
+			hit: ['t']
+		});
+
+		// TODO make this work!
+		// expect(wrapper.find('.t-word').html()).toBe(
+		// 	'<p class="t-word"><span>t</span><span>_</span><span>_</span><span>t</span></p>'
+		// );
+	}); 
 }); 
