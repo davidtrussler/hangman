@@ -12,8 +12,6 @@
 
 ### Steps to build the app
 
-#### - [X] Done - [ ] ToDo 
-
 - [X] Set up basic react app
 
 - [X] Strip out the unnecessary files, update README and add any required basic assets (e.g. favicon)
@@ -41,11 +39,11 @@
 				- [ ] game level: levels.length
 		- [ ] hits: update array on each guess
 		- [ ] misses: update array on each guess
-		- [ ] word: update to random value on `Start game`
+		- [X] word: update to random value on `Start game`
 
 - Add/udpate styles based on game states: 
 	- [X] inactive
-  - [ ] active
+  - [X] active
   - [ ] complete
 
 - [ ] Make sprite for main image
