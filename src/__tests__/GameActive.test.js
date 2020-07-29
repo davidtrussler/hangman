@@ -1,6 +1,6 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16'; 
-import Enzyme, { shallow } from 'enzyme'; 
+import Enzyme, { shallow, mount } from 'enzyme'; 
 import { GameActive } from '../components/GameActive'; 
 import { Library } from '../components/Library'; 
 
@@ -10,7 +10,7 @@ describe('GameActive component', () => {
 	let wrapper; 
 
 	beforeEach(() => {
-		wrapper = shallow(<GameActive/>); 
+		wrapper = mount(<GameActive/>); 
 	}); 
 
 	test('Checks the `hits`, `misses` and `word` states are set correctly on load', () => {
@@ -37,9 +37,31 @@ describe('GameActive component', () => {
 			hit: ['t']
 		});
 
-		// TODO make this work!
-		// expect(wrapper.find('.t-word').html()).toBe(
-		// 	'<p class="t-word"><span>t</span><span>_</span><span>_</span><span>t</span></p>'
-		// );
+		expect(wrapper.find('.t-word').html()).toBe(
+			'<p class="t-word"><span>t</span><span>_</span><span>_</span><span>t</span></p>'
+		);
+	}); 
+
+	test('Checks the hits state is updated on user interaction', () => {
+		let input = wrapper.find('.t-input'); 
+		let btn = wrapper.find('.t-btn'); 
+
+		wrapper.setState({
+			word: 'test'
+		});
+
+		input.instance().value = 't'; 
+		btn.simulate('click'); 
+
+		expect(wrapper.state('hits').length).toBe(1); 
+		expect(wrapper.state('hits').indexOf('t')).toBe(0); 
+		expect(wrapper.state('misses').length).toBe(0); 
+
+		input.instance().value = 'd'; 
+		btn.simulate('click'); 
+
+		expect(wrapper.state('hits').length).toBe(1); 
+		expect(wrapper.state('misses').length).toBe(1); 
+		expect(wrapper.state('misses').indexOf('d')).toBe(0); 
 	}); 
 }); 
