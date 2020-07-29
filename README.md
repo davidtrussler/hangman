@@ -12,44 +12,44 @@
 
 ### Steps to build the app
 
-#### Done [X] ToDo []
+#### - [X] Done - [ ] ToDo 
 
-- Set up basic react app [X]
+- [X] Set up basic react app
 
-- Strip out the unnecessary files, update README and add any required basic assets (e.g. favicon) [X]
+- [X] Strip out the unnecessary files, update README and add any required basic assets (e.g. favicon)
 
-- Create basic components (markup) for initial state [X]
+- [X] Create basic components (markup) for initial state
 
-- Set up SASS [X]
+- [X] Set up SASS
 
-- Add styles for initial state [X]
+- [X] Add styles for initial state
 
-- Set up Jest [X]
+- [X] Set up Jest
 
 - Add game logic: 
 	- Set initial state: 
-		- playing: `inactive` [X]
+		- [X] playing: `inactive`
 	- Set game active states 
-		- hits: empty array [X]
-		- misses: empty array [X]
-		- word: random word [X]
+		- [X] hits: empty array
+		- [X] misses: empty array
+		- [X] word: random word
 	- Change states based on user input:
 		- playing: 
-			- `active` on `Start game` [X]
+			- [X] `active` on `Start game`
 			- `complete` on either 
-				- hits = letters.length []
-				- game level: levels.length []
-		- hits: update array on each guess []
-		- misses: update array on each guess []
-		- word: update to random value on `Start game` []
+				- [ ] hits = letters.length
+				- [ ] game level: levels.length
+		- [ ] hits: update array on each guess
+		- [ ] misses: update array on each guess
+		- [ ] word: update to random value on `Start game`
 
-- Update display based on game states: 
-	- inactive [X]
-  - active []
-  - complete []
+- Add/udpate styles based on game states: 
+	- [X] inactive
+  - [ ] active
+  - [ ] complete
 
-- Make sprite for main image []
+- [ ] Make sprite for main image
 
-- Replace images with SVG []
+- [ ] Replace images with SVG
 
-- Add breakpoints as variables []
+- [ ] Add breakpoints as variables
