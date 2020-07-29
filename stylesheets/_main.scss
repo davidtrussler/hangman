@@ -13,44 +13,94 @@ main {
 		margin-right: 0; 
 	}
 
-	p {
-		text-indent: 1rem; 
-
-		&:first-child {
-			text-indent: 0; 
-			font-weight: bold; 
-		}
-	}
-
-	.img-container {
-		width: 100%;
-		max-width: calc(250px - #{$default-gutter}); 
-		height: 0;
-		padding: 195 / 142 * 100% 0 0; 
-		margin: 1rem auto;
-		background: url('/figure.png'); 
-		background-repeat: no-repeat;
-		background-size: cover; 
-
-		@include respond-to(250px) {
-			height: 195 / 142 * 250px;
-			padding-top: 0;
-		}
-
-		@include respond-to(600px) {
-			margin-top: 0; 
-		}
-	}
-
-	.btn--start {
-		display: block; 
-		margin: 0 auto; 
-	}
-
 	.intro, 
 	.game {
 		@include respond-to(600px) {
 			@include column(6); 
+		}
+	}
+
+	.intro {
+		p {
+			text-indent: 1rem; 
+
+			&:first-child {
+				text-indent: 0; 
+				font-weight: bold; 
+			}
+		}
+	}
+
+	.game {
+		.img-container {
+			width: 100%;
+			max-width: calc(250px - #{$default-gutter}); 
+			height: 0;
+			padding: 195 / 142 * 100% 0 0; 
+			margin: 1rem auto;
+			background: url('/figure.png'); 
+			background-repeat: no-repeat;
+			background-size: cover; 
+
+			@include respond-to(250px) {
+				height: 195 / 142 * 250px;
+				padding-top: 0;
+			}
+
+			@include respond-to(600px) {
+				margin-top: 0; 
+			}
+		}
+
+		.btn--start {
+			display: block; 
+			margin: 0 auto; 
+		}
+
+		.game__field {
+			margin: 0 0 1rem; 
+
+			.word__heading, 
+			.guess__heading, 
+			.misses__heading {
+				font-size: 1.25rem; 
+			}
+		}
+
+		.game__field__word {
+			p {
+				font-size: 1.125rem; 
+	
+				span {
+					margin: 0 0.5rem 0 0;
+
+					&:last-child {
+						margin-right: 0; 
+					}
+				}
+			}
+		}
+
+		.game__field__guess {
+			form {
+				margin: 0.5rem 0 0;
+			}
+
+			input, 
+			button {
+				font-size: 1.125rem; 				
+			}
+
+			input {
+				text-align: center; 
+				margin: 0 0.25rem 0 0;
+			}
+		}
+
+		.game__field__misses {
+			p {
+				font-size: 1.125rem; 
+			}
 		}
 	}
 }
